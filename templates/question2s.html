@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 【質問】PC&スマホ選び支援 </title>
+</head>
+
+<body>
+    <h1> 【質問】PC&スマートフォン選び支援webアプリ </h1>
+    <h1> {{device}} </h1>
+    <h2> 質問2 </h2>
+    <p>予算はいくらですか？</p>
+    <form action="/question3s" method="post">
+        <select name=device_choice>
+            <option value="~10man"> ~10万</option>
+            <option value="10~15man"> 10-15万</option>
+            <option value="15~20man">15~20万</option>
+            <option value="20~25man">20~25万</option>
+            <option value="25man~">25万~</option>
+        </select>
+        <h2> 質問3 </h2>
+        <p>主に何に使うつもりですか？</p>
+        <select id="device_use">
+            <option value="game">ゲーム</option>
+            <option value="watch">動画視聴</option>
+            <option value="sns">SNS</option>
+            <option value="webbrouze">ネットサーフィン</option>
+            <option value="else">その他</option>
+        </select>
+
+        <div id="use_els" style="display:none;">
+            <label>具体的に教えてください</label>
+            <input type="text" name="textbox">
+        </div>
+        <h2>質問4</h2>
+        <p>iosとandroidではどちらが好みですか？</p>
+        <label><input type="radio" name=os>ios</label>
+        <label><input type="radio" name=os>Android</label>
+        <h2> 質問5 </h2>
+        <p>こだわりポイントは何ですか？</p>
+        <select id="device_point">
+            <option value="game">カメラ</option>
+            <option value="design">デザイン</option>
+            <option value="performance">性能</option>
+            <option value="battery">バッテリー持ち・充電速度</option>
+            <option value="else">その他</option>
+        </select>
+        <div id="point_els" style="display:none;">
+            <label>具体的に教えてください</label>
+            <input type="text" name="point_els_text">
+        </div>
+    </br>
+    </br>
+        <button type="submit">送信</button>
+
+    </form>
+
+    <script src="/static/index.js">
+
+    </script>
+</body>
+
+</html>

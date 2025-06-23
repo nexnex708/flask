@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title> 【質問】PC&スマホ選び支援 </title>
-    </head>
 
-    <body>
-        <h1> 【質問】PC&スマートフォン選び支援webアプリ </h1>
-        <h2> 質問1 </h2>
-        <p> あなたはPCとスマートフォンのどちらが欲しいですか？ </p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title> 【質問】PC&スマホ選び支援 </title>
+</head>
+
+<body>
+    <h1> 【質問】PC&スマートフォン選び支援webアプリ </h1>
+    <h2> 質問1 </h2>
+    <p> あなたはPCとスマートフォンのどちらが欲しいですか？ </p>
+    <form action="/question2s" method="post">
+        <button formaction="/question2s" type="submit" name="device" value="スマートフォン">スマートフォン</button>
+    </form>
+
+    <form action="/question2p" method="post">
+        <button formaction="/question2p" type="submit" name="PC">パソコン</button>
+    </form>
+
+</body>
 
 </html>

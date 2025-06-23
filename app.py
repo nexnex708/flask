@@ -1,5 +1,7 @@
-from flask import Flask, render_template
-
+from flask import Flask, render_template, request
+from google import genai
+from pydantic import BaseModel
+import os
 app = Flask(__name__)
 
 @app.route("/")
@@ -13,3 +15,9 @@ def question_lobby():
 @app.route("/question")
 def question():
     return render_template("question.html")
+
+@app.route("/question2s",methods=["post"])
+def question2():
+    device=request.form["device"]
+    return render_template("question2s.html",device=device)
+
