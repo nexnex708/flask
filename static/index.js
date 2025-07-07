@@ -1,5 +1,5 @@
-const de = document.getElementById("device_use");
-const use_els = document.getElementById("use_els")
+const de = document.getElementByName("device_use");
+const use_els = document.getElementByName("use_els")
 de.addEventListener("change",function(){if (de.value == "else"){
     use_els.style.display ="block"}
 else{
@@ -7,8 +7,8 @@ else{
 };
 });
 
-const dep = document.getElementById("device_point");
-const point_els = document.getElementById("point_els")
+const dep = document.getElementByName("device_point");
+const point_els = document.getElementByName("point_els")
 dep.addEventListener("change",function(){if (dep.value == "else"){
     point_els.style.display ="block"}
 else{
